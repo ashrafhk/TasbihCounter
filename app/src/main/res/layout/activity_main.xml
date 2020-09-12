@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:weightSum="1">
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_tasbih"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:text="TASBIH CONTER"
+        android:textColor="#ffffff"
+        android:textStyle="bold|italic"
+        android:textSize="40dp"
+        android:textAlignment="center"
+        android:foregroundGravity="center"
+        android:layout_marginTop="20dp" />
+
+        <TextView
+            android:id="@+id/txtAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bg_connt"
+            android:foregroundGravity="center_vertical|center|center_horizontal"
+            android:gravity="center"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/count_btn"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:background="@drawable/counter_btn"
+            android:foregroundGravity="center"
+            android:layout_marginTop="70dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp">
+
+            <ImageButton
+            android:id="@+id/reset_btn"
+            android:layout_width="45dp"
+            android:layout_height="60dp"
+            android:background="@drawable/reset_icon"
+            android:layout_marginTop="30dp" />
+
+            <ImageButton
+                android:id="@+id/vib_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_vibration"
+                android:background="@color/transparent"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="30dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>
